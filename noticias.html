@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Criando páginas com o Bootstrap</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+	<body>
+        <!--Barra de Navegação-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-info">
+            <a class="navbar-brand" href="index.html">TechnoSchool</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>       
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><!-- aqui dá pra trocar o fundo do dropdown-->
+                            <a class="dropdown-item" href="cursos.html">Todos</a>
+                            <a class="dropdown-item" href="informatica.html">Informática Básica</a>
+                            <a class="dropdown-item" href="web.html">Web Design e Developer</a>
+                            <a class="dropdown-item" href="programacao.html">Programação</a>
+                            <a class="dropdown-item" href="dados.html">Excel Avançado e Power-BI</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Unidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><!-- aqui dá pra trocar o fundo do dropdown-->
+                            <a class="dropdown-item" href="guara.html">Guaratinguetá</a>
+                            <a class="dropdown-item" href="pinda.html">Pindamonhangaba</a>
+                            <a class="dropdown-item" href="taubate.html">Taubaté</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Fim da barra de navegação-->
+    
+        <div class="container">
+            <div class="row my-3">
+                <p class="h2 text-info">Uma instituição alinhada com a tecnologia</p>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse, iure at distinctio, illo sit nemo laboriosam doloremque in error tenetur totam ipsam voluptates cupiditate atque dolorem qui sint. Recusandae!</p>    
+            </div>
+            <hr class="border border-info">
+            <div class="row my-4">
+                <!--Barra na lateral esquerda com os links para navegação-->
+                <div class="col-md-4 bg-info pt-3 border border-info rounded">
+                    <p class="h5 text-light">Navegue</p>
+                    <hr>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info"><a href="quemsomos.html" class="text-info">Nossa Escola</a></li>
+                        <li class="list-group-item list-group-item-info"><a href="historia.html" class="text-info">História</a></li>
+                        <li class="list-group-item list-group-item-info"><a href="missao.html" class="text-info">Missão, Visão e Valores</a></li>
+                        <li class="list-group-item list-group-item-info"><a href="noticias.html" class="text-info">Notícias</a></li>
+                    </ul>
+                </div>
+                <!--Área do conteúdo do lado direito-->
+                <div class="col-md-8">
+                    <div class="border border-info rounded p-2">
+                        <p class="h2">Título da Notícia</p>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, repudiandae ab? Vero, blanditiis pariatur. Labore, facere asperiores officia optio doloribus vel soluta, adipisci quas, ut odio voluptatibus reiciendis similique laborum!
+                        </p>
+                        <p class="text-justify text-secondary">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolores laudantium ratione repudiandae quod, odio mollitia iure. Beatae ipsam dignissimos doloribus nemo distinctio nesciunt voluptatum saepe, magnam, iste, eligendi vel.
+                        </p>
+                        <p class="text-justify text-secondary">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis incidunt illum, id voluptatibus aperiam nisi ullam ad suscipit a doloremque modi aut, quo quod voluptatem ipsa nam cum natus omnis?
+                        </p>
+                        <p class="text-justify text-secondary">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique atque dolorum quibusdam doloribus incidunt molestias nemo laboriosam accusamus libero doloremque nesciunt illo laborum, inventore blanditiis dolorem reiciendis repellat ut sit.
+                        </p>
+                        <p class="h5 text-center">Novos alunos por unidade nos últimos meses</p>
+                        <table class="table table-info table-striped table-hover table-responsive-lg">
+                            <thead class="thead-info bg-info">
+                                <th scope="col">Unidade</th>
+                                <th scope="col">Abril</th>
+                                <th scope="col">Maio</th>
+                                <th scope="col">Junho</th>
+                                <th scope="col">Julho</th>
+                                <th scope="col">Total</th>
+                            </thead>
+                            <tr>
+                                <th scope="row">Guaratinguetá</th>
+                                <td>11</td>
+                                <td>18</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <th scope="col">70</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pindamonhangaba</th>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>23</td>
+                                <td>26</td>
+                                <th scope="col">82</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Taubaté</th>
+                                <td>15</td>
+                                <td>19</td>
+                                <td>31</td>
+                                <td>33</td>
+                                <th scope="col">98</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Total</th>
+                                <th scope="col">42</th>
+                                <th scope="col">54</th>
+                                <th scope="col">74</th>
+                                <th scope="col">80</th>
+                                <th scope="col">250</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid bg-dark" style="height: 120px;">
+            <hr>
+            <p class="float-left text-secondary">&copy; 2021 &centerdot; Nome do desenvolvedor &centerdot; <a class="text-info" href="mapa.html">Mapa do site</a></p>
+            <p class="float-right"><a class="text-info" href="#">Voltar ao topo</a></p>
+        </footer>        
+
+    <!--Importação dos scripts do Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>

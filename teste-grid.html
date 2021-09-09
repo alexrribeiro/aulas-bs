@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Criando páginas com o Bootstrap</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+	<body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-info">
+            <a class="navbar-brand" href="index.html">TechnoSchool</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>       
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><!-- aqui dá pra trocar o fundo do dropdown-->
+                            <a class="dropdown-item" href="cursos.html">Todos</a>
+                            <a class="dropdown-item" href="informatica.html">Informática Básica</a>
+                            <a class="dropdown-item" href="web.html">Web Design e Developer</a>
+                            <a class="dropdown-item" href="programacao.html">Programação</a>
+                            <a class="dropdown-item" href="dados.html">Excel Avançado e Power-BI</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Unidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><!-- aqui dá pra trocar o fundo do dropdown-->
+                            <a class="dropdown-item" href="guara.html">Guaratinguetá</a>
+                            <a class="dropdown-item" href="pinda.html">Pindamonhangaba</a>
+                            <a class="dropdown-item" href="taubate.html">Taubaté</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--Conteúdo da página dividido por grid-->
+        <div class="container">
+            <!--Início do carrossel-->
+            <div id="exemploCarrossel" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#exemploCarrossel" data-slide-to="0" class="active"></li>
+                    <li data-target="#exemploCarrossel" data-slide-to="1"></li>
+                    <li data-target="#exemploCarrossel" data-slide-to="2"></li>
+                    <li data-target="#exemploCarrossel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="01-Rio.jpg" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="opacity: 0.8;">
+                            <h5>Título</h5>
+                            <p>Aqui vai o texto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="02-Iguacu.jpg" alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="opacity: 0.8;">
+                            <h5>Título</h5>
+                            <p>Aqui vai o texto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="03-Buttes-North.jpg" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="opacity: 0.8;">
+                            <h5>Título</h5>
+                            <p>Aqui vai o texto</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="04-Machu-Picchu.jpg" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block bg-dark" style="opacity: 0.8;">
+                            <h5>Título</h5>
+                            <p>Aqui vai o texto</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#exemploCarrossel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#exemploCarrossel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <!--Fim do carrossel-->
+
+            <!-- <div class="alert alert-warning mt-2 mb-0" role="alert">
+                Um simples alerta nesta página, só pra testar.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> -->
+            <div class="row">
+                <div class="col-md border border-success rounded my-2 mx-1 py-2">
+                    <h5 class="text-success">Uma de três colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deserunt nemo dignissimos quo veritatis beatae repellendus et fugiat reiciendis vero voluptates ipsam, nobis sunt quam labore pariatur exercitationem soluta cumque.</p>
+                </div>
+                <div class="col-md border border-success rounded my-2 mx-1 py-2">
+                    <h5 class="text-success">Uma de três colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quia porro reprehenderit ipsum. Ipsum molestiae velit deserunt provident repellendus accusamus voluptatibus? At debitis officia, velit quia corporis quasi soluta consequuntur?</p>
+                </div>
+                <div class="col-md border border-success rounded my-2 mx-1 py-2">
+                    <h5 class="text-success">Uma de três colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis provident incidunt at voluptatum dolores velit, deleniti reiciendis amet. Minima, obcaecati voluptatem voluptatibus qui quia repudiandae quis eos autem earum deleniti.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 border border-warning rounded my-2 mx-1 py-2">
+                    <h5 class="text-warning">Uma de três colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ducimus ratione amet eaque illo inventore repellendus sunt temporibus omnis dolorum tempora nesciunt libero harum praesentium commodi laborum, consequuntur non quod!</p>
+                </div>
+                <div class="col-md-5 border border-warning rounded my-2 mx-1 py-2">
+                    <h5 class="text-warning">Uma de três colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat aut esse officiis adipisci doloribus delectus hic perferendis quos eum eos placeat aliquam quisquam amet, repudiandae assumenda quae molestias vero.</p>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis sunt ullam autem sint. Veritatis eius, eaque, aut sint possimus quod quisquam recusandae inventore totam adipisci officia sit facilis ad corrupti.</p>
+                </div>
+                <div class="col-md border border-warning rounded my-2 mx-1 py-2">
+                    <h5 class="text-warning">Uma de três colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt similique ad totam eius, nesciunt saepe corporis, ut unde officiis officia perferendis impedit ab asperiores nulla culpa. Velit inventore et assumenda!</p>
+                </div>
+            </div>
+            <!-- <div class="alert alert-info mb-0" role="alert">
+                Outro alerta nesta página, só pra testar.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> -->
+            <div class="row">
+                <div class="col-md-8 border border-danger rounded my-2 mx-1 py-2">
+                    <h5 class="text-danger">Uma de duas colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ducimus ratione amet eaque illo inventore repellendus sunt temporibus omnis dolorum tempora nesciunt libero harum praesentium commodi laborum, consequuntur non quod!</p>
+                    <p class="text-secondary text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut provident fugit molestiae minima aspernatur, voluptatem id vitae mollitia harum nam nihil reiciendis. Dolorem quasi asperiores laborum, exercitationem pariatur itaque nostrum!</p>
+                </div>
+                <div class="col-md border border-danger rounded my-2 mx-1 py-2">
+                    <h5 class="text-danger">Uma de duas colunas</h5>
+                    <hr>
+                    <p class="text-secondary text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore fugiat aut esse officiis adipisci doloribus delectus hic perferendis quos eum eos placeat aliquam quisquam amet, repudiandae assumenda quae molestias vero.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid bg-dark" style="height: 100px;">
+            <hr>
+            <p class="float-left text-secondary">&copy; 2021 &centerdot; Nome do desenvolvedor &centerdot; <a class="text-info">Mapa do site</a></p>
+            <p class="float-right"><a class="text-info" href="#">Voltar ao topo</a></p>
+        </footer>
+
+    <!--Importação dos scripts do Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>

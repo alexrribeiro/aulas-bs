@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Criando páginas com o Bootstrap</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+	<body>
+        <!--Barra de Navegação-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-info">
+            <a class="navbar-brand" href="index.html">TechnoSchool</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>       
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cursos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><!-- aqui dá pra trocar o fundo do dropdown-->
+                            <a class="dropdown-item" href="cursos.html">Todos</a>
+                            <a class="dropdown-item" href="informatica.html">Informática Básica</a>
+                            <a class="dropdown-item" href="web.html">Web Design e Developer</a>
+                            <a class="dropdown-item" href="programacao.html">Programação</a>
+                            <a class="dropdown-item" href="dados.html">Excel Avançado e Power-BI</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Unidades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"><!-- aqui dá pra trocar o fundo do dropdown-->
+                            <a class="dropdown-item" href="guara.html">Guaratinguetá</a>
+                            <a class="dropdown-item" href="pinda.html">Pindamonhangaba</a>
+                            <a class="dropdown-item" href="taubate.html">Taubaté</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Fim da barra de navegação-->
+    
+        <div class="container">
+            <div class="row my-3">
+                <p class="h2 text-info">Sempre perto de você</p>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus id, delectus perspiciatis debitis soluta laudantium tempore in. Nemo vero nobis et eveniet asperiores possimus, id consequatur exercitationem earum libero totam!</p>    
+            </div>
+            <hr class="border border-info">
+            <div class="row my-4">
+                <!--Primeira coluna - imagem-->
+                <div class="col-md-4">
+                    <img src="imagens/fachada-guara.jpg" class="w-100 rounded">
+                </div>
+                <!--Segunda coluna - texto-->
+                <div class="col-md-5">
+                    <p class="h3 text-info">Unidade Guaratinguetá</p>
+                    <hr>
+                    <p class="text-justify text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis provident qui temporibus fugiat natus, culpa dolorem, consectetur sunt, eius dignissimos assumenda nulla hic voluptas mollitia enim! Perspiciatis quod repellendus doloribus.</p>
+                    <p class="text-justify text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, impedit totam aperiam accusamus laboriosam perferendis iusto? Aspernatur quidem nulla hic cupiditate, libero inventore dolor. Facere veniam aperiam neque natus doloremque?</p>
+                    <p class="text-justify text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ipsum reiciendis voluptatem dolores! Nam ea eos fuga nobis cupiditate similique. Dolorum doloribus ipsa corrupti nisi facilis cum rerum quisquam suscipit.</p>
+                </div>
+                <!--Terceira coluna - box de informações adicionais-->
+                <div class="col-md-3 pt-3 border border-info rounded">
+                    <h5 class="text-info">Informações:</h5>
+                    <hr class="border border-info">
+                    <h6>Endereço:</h6>
+                    <p class="text-secondary">Rua Comendador Rodrigues Alves, 192 - Centro</p>
+                    <hr>
+                    <h6>Funcionamento:</h6>
+                    <p class="text-secondary">Segunda a sexta: 08h00-22h00<br>Sábado: 08h00-15h00</p>
+                    <hr>
+                    <h6>Telefones:</h6>
+                    <p class="text-secondary">(12) 3128-8049<br>(12) 98176-8049</p>
+                    <hr>
+                    <h6>Redes Sociais:</h6>
+                    <p class="text-secondary">Facebook, Twitter e Instagram: <strong>technoguara</strong></p>
+                    <hr>
+                    <h6>Cursos Oferecidos:</h6>
+                    <p class="text-secondary">Informática Básica, Web Design e Developer, Programação</p>
+                </div>
+            </div>           
+        </div>
+
+        <footer class="container-fluid bg-dark" style="height: 120px;">
+            <hr>
+            <p class="float-left text-secondary">&copy; 2021 &centerdot; Nome do desenvolvedor &centerdot; <a class="text-info" href="mapa.html">Mapa do site</a></p>
+            <p class="float-right"><a class="text-info" href="#">Voltar ao topo</a></p>
+        </footer>        
+
+    <!--Importação dos scripts do Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
